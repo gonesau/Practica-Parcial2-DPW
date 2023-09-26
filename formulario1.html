@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>l
+  </head>
+  <body>
+    <form>
+      <!-- Text input field with label -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Email input field with label -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Dropdown list using datalist -->
+      <label for="gender">Gender:</label>
+      <input type="text" list="genderOptions" id="gender" name="gender" />
+      <datalist id="genderOptions">
+        <option value="Male"></option>
+        <option value="Female"></option>
+        <option value="Other"></option>
+      </datalist>
+
+      <!-- Radio buttons for selecting a programming language -->
+      <label for="language">Preferred Programming Language:</label><br />
+      <input type="radio" id="java" name="language" value="Java" />
+      <label for="java">Java</label><br />
+      <input type="radio" id="python" name="language" value="Python" />
+      <label for="python">Python</label><br />
+      <input type="radio" id="javascript" name="language" value="JavaScript" />
+      <label for="javascript">JavaScript</label><br />
+
+      <!-- Checkboxes for selecting multiple interests -->
+      <label for="interests">Interests:</label><br />
+      <input
+        type="checkbox"
+        id="web"
+        name="interests"
+        value="Web Development"
+      />
+      <label for="web">Web Development</label><br />
+      <input
+        type="checkbox"
+        id="mobile"
+        name="interests"
+        value="Mobile App Development"
+      />
+      <label for="mobile">Mobile App Development</label><br />
+      <input type="checkbox" id="data" name="interests" value="Data Science" />
+      <label for="data">Data Science</label><br />
+
+      <!-- Submit button to submit the form -->
+      <input type="submit" value="Submit" />
+    </form>
+
+     <!-- Estructura dada en clases -->
+    <form>
+      <label for="nombre">
+        <span>cual es tu nombre</span>
+        <input type="text" id="nombre” name=" nombre” />  <!-- Mismo name para agruparlos -->
+
+      </label>
+    </form>
+
+
+    <form>
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- 'required' attribute ensures the input field is not empty -->
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <!-- 'required' attribute ensures the input field is not empty and follows email format validation -->
+
+        <!-- Number input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="120" required>
+        <!-- 'min' and 'max' attribute sets the range of acceptable values -->
+
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <!-- 'minlength' attribute sets the minimum number of characters for the password -->
+
+        <!-- Checkbox input -->
+        <label for="agree">I agree to the terms and conditions:</label>
+        <input type="checkbox" id="agree" name="agree" required>
+        <!-- 'required' attribute ensures the checkbox is checked -->
+
+        <!-- Radio inputs -->
+        <p>Gender:</p>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <!-- 'required' attribute ensures one of the radio buttons is selected -->
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <!-- 'required' attribute ensures one of the radio buttons is selected -->
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
+l
